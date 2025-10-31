@@ -30,7 +30,6 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1 class="hero-title">Discover Your Dream Investment</h1>
             <p class="hero-subtitle">Premium Real Estate Properties & Luxury Vehicles</p>
@@ -259,16 +258,16 @@
                 </div>
                 <div class="contact-form-wrapper">
                     <form class="contact-form">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Phone Number">
-                        <select>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                        <select id="interest" name="interest" aria-label="Interest Area">
                             <option value="">Interest Area</option>
                             <option value="property">Real Estate</option>
                             <option value="vehicle">Automotive</option>
                             <option value="both">Both</option>
                         </select>
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>

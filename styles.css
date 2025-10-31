@@ -128,19 +128,19 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-color: var(--primary-gold);
 }
 
-.btn-contact {
+.nav-menu .btn-contact {
     background: linear-gradient(135deg, var(--primary-gold) 0%, var(--primary-gold-dark) 100%);
-    padding: 0.6rem 1.5rem !important;
+    padding: 0.6rem 1.5rem;
     border-radius: 25px;
-    border: none !important;
+    border: none;
     box-shadow: var(--shadow-gold);
     transition: all var(--transition-normal);
 }
 
-.btn-contact:hover {
+.nav-menu .btn-contact:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
-    color: var(--text-light) !important;
+    color: var(--text-light);
 }
 
 /* ========================================
