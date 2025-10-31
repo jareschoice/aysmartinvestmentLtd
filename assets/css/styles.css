@@ -1,0 +1,255 @@
+/* -------------------- GLOBAL SETTINGS -------------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #020617;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: gold;
+}
+
+/* -------------------- BN RIBBON -------------------- */
+#bn-ribbon {
+  background: linear-gradient(90deg, #001F3F, #003366);
+  color: gold;
+  font-weight: 600;
+  padding: 3px 0;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+  animation: scrollText 10s linear infinite;
+  overflow: hidden;
+}
+
+#bn-ribbon span {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 12s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+  background: rgba(0, 0, 40, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 10px 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 60, 0.95);
+}
+
+.navbar-brand img {
+  width: 120px;
+}
+
+.nav-link {
+  color: #f1f1f1;
+  font-weight: 500;
+  margin: 0 8px;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: gold;
+}
+
+.toggler-img {
+  width: 40px;
+}
+
+/* -------------------- HERO SECTIONS -------------------- */
+.hero-banner {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(145deg, rgba(0, 0, 50, 0.9), rgba(0, 0, 70, 0.9));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-banner h1 {
+  font-size: 2.8rem;
+  color: #fff;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, gold, #FFD700, #F3E5AB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-watermark img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.06;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  animation: slowFade 10s infinite alternate;
+}
+
+@keyframes slowFade {
+  from { opacity: 0.04; transform: translate(-50%, -50%) scale(1); }
+  to { opacity: 0.1; transform: translate(-50%, -50%) scale(1.05); }
+}
+
+/* -------------------- CAROUSEL -------------------- */
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.overlay-blur {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+
+/* -------------------- SERVICE CARDS -------------------- */
+.service-card {
+  background: rgba(0, 0, 40, 0.85);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+.service-card .icon i {
+  font-size: 3rem;
+  color: gold;
+}
+
+.real-estate {
+  background: linear-gradient(145deg, rgba(0,0,50,0.9), rgba(20,20,70,0.95));
+}
+
+.automotive {
+  background: linear-gradient(145deg, rgba(15,15,15,0.95), rgba(50,50,70,0.9));
+}
+
+/* -------------------- TESTIMONIALS -------------------- */
+.testimonial-card {
+  background: rgba(0, 0, 20, 0.8);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.3);
+}
+
+/* -------------------- REGISTER PAGE -------------------- */
+.register-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.watermark img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  opacity: 0.07;
+  transform: translate(-50%, -50%);
+}
+
+.register-card {
+  background: rgba(0, 0, 20, 0.8);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease-in-out;
+}
+
+.register-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+/* -------------------- FOOTERS -------------------- */
+.social-footer {
+  background: #001f3f;
+  padding: 15px 0;
+}
+
+.social-footer a {
+  color: gold;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: 0.3s ease;
+}
+
+.social-footer a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.copyright-footer {
+  background: #000814;
+  color: #ccc;
+  font-size: 0.9rem;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* -------------------- ANIMATIONS -------------------- */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* -------------------- RESPONSIVE -------------------- */
+@media (max-width: 768px) {
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+  .navbar-brand img {
+    width: 100px;
+  }
+}
+.cac-frame {
+  background: rgba(0, 0, 50, 0.8);
+  border: 2px solid rgba(255, 215, 0, 0.3);
+  max-width: 500px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.cac-frame:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+}
