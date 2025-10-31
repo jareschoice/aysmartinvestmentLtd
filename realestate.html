@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate | AY'SMART Investment Ltd</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo.png" alt="AYSMART Logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="assets/img/logo.png" alt="AYSMART Toggle Logo" class="toggler-img">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="realestate.html">Real Estate</a></li>
+          <li class="nav-item"><a class="nav-link" href="automotive.html">Automotive</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Carousel -->
+  <section id="estateCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/realestate1.jpg" class="d-block w-100" alt="Estate 1">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="fw-bold text-light display-5">Discover Prime Estates</h1>
+          <p class="text-warning fw-semibold">Smart Investments. Secure Returns.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/realestate2.jpg" class="d-block w-100" alt="Estate 2">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="fw-bold text-light display-5">Luxury Homes & Duplexes</h1>
+          <p class="text-warning fw-semibold">Built with class and comfort.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/realestate3.jpg" class="d-block w-100" alt="Estate 3">
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1 class="fw-bold text-light display-5">Invest. Build. Grow.</h1>
+          <p class="text-warning fw-semibold">AY’SMART makes it possible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Listings Section -->
+  <section class="realestate-listings py-5 text-light text-center">
+    <div class="container">
+      <h2 class="fw-bold text-warning mb-4">Featured Properties</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="estate-card p-3 shadow-lg rounded">
+            <img src="assets/img/realestate4.jpg" class="img-fluid rounded mb-3" alt="Luxury Duplex">
+            <h4 class="text-warning">Luxury Duplex</h4>
+            <p>4-bedroom duplex with smart security and solar power in Abuja.</p>
+            <a href="details_realestate.html" class="btn btn-outline-warning">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="estate-card p-3 shadow-lg rounded">
+            <img src="assets/img/realestate5.jpg" class="img-fluid rounded mb-3" alt="Serviced Apartments">
+            <h4 class="text-warning">Serviced Apartments</h4>
+            <p>Modern apartments for rent and sale at Lekki Phase 1, Lagos.</p>
+            <a href="details_realestate.html" class="btn btn-outline-warning">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="estate-card p-3 shadow-lg rounded">
+            <img src="assets/img/land1.jpg" class="img-fluid rounded mb-3" alt="Land Plots">
+            <h4 class="text-warning">Verified Land Plots</h4>
+            <p>Secure and documented lands for sale in Ilorin and Ibadan.</p>
+            <a href="details_realestate.html" class="btn btn-outline-warning">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="estate-card p-3 shadow-lg rounded">
+            <img src="assets/img/estate2.jpg" class="img-fluid rounded mb-3" alt="Mini Estate">
+            <h4 class="text-warning">Mini Estate</h4>
+            <p>Exclusive gated estate with 24/7 security and smart amenities.</p>
+            <a href="details_.html" class="btn btn-outline-warning">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="estate-card p-3 shadow-lg rounded">
+            <img src="assets/img/realestate6.jpg" class="img-fluid rounded mb-3" alt="Commercial Space">
+            <h4 class="text-warning">Commercial Space</h4>
+            <p>Office complexes and retail spaces in strategic city centers.</p>
+            <a href="details_realestate.html" class="btn btn-outline-warning">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section text-center py-5 bg-dark">
+    <div class="container">
+      <h3 class="fw-bold text-light mb-3">Ready to Invest Smartly?</h3>
+      <p class="text-warning">Join thousands securing their future with AY’SMART Real Estate.</p>
+      <a href="register.html" class="btn btn-warning btn-lg text-dark fw-bold">Register Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="social-footer text-center">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-whatsapp"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-tiktok"></i></a>
+  </div>
+  <div class="copyright-footer text-center">
+    <p>&copy; 2025 AY'SMART Investment Ltd. All Rights Reserved.</p>
+  </div>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

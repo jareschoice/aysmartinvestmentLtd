@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automotive Details | AY'SMART Investment Ltd</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- BN Ribbon -->
+  <div id="bn-ribbon"><span>BN:355566</span></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="assets/img/logo.png" alt="AYSMART Logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler border-0 p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="assets/img/logo.png" alt="Toggle Logo" class="toggler-img">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="details_realestate.html">Real Estate</a></li>
+          <li class="nav-item"><a class="nav-link active" href="details_auto.html">Automotive</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-banner d-flex align-items-center justify-content-center text-center text-light">
+    <div class="container position-relative">
+      <div class="hero-watermark">
+        <img src="assets/img/logo.png" alt="Watermark Logo">
+      </div>
+      <h1 class="fw-bold mb-3 text-gradient">AY'SMART Automotive Division</h1>
+      <h4 id="animatedTextAuto" class="fw-semibold text-warning"></h4>
+    </div>
+  </section>
+
+  <!-- AUTOMOTIVE COLLECTION -->
+  <section class="property-list py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Car 1 -->
+        <div class="col-md-3">
+          <div class="card property-card shadow-lg">
+            <img src="assets/img/car1.jpg" class="card-img-top" alt="Car Image">
+            <div class="card-body">
+              <h5 class="card-title text-warning">2023 Mercedes-Benz GLE 450</h5>
+              <p class="card-text text-light">Luxury SUV with premium comfort and performance.</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="col-md-3">
+          <div class="card property-card shadow-lg">
+            <img src="assets/img/car2.jpg" class="card-img-top" alt="Car Image">
+            <div class="card-body">
+              <h5 class="card-title text-warning">2024 Lexus RX 350</h5>
+              <p class="card-text text-light">Elegant design, top-notch technology, and reliability.</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="col-md-3">
+          <div class="card property-card shadow-lg">
+            <img src="assets/img/car3.jpg" class="card-img-top" alt="Car Image">
+            <div class="card-body">
+              <h5 class="card-title text-warning">2022 Range Rover Sport</h5>
+              <p class="card-text text-light">Dynamic luxury SUV with unmatched capability.</p>
+              <a href="details_auto.html" class="btn btn-outline-warning btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 4 -->
+        <div class="col-md-3">
+          <div class="card property-card shadow-lg">
+            <img src="assets/img/car4.jpg" class="card-img-top" alt="Car Image">
+            <div class="card-body">
+              <h5 class="card-title text-warning">2023 Toyota Land Cruiser</h5>
+              <p class="card-text text-light">The perfect balance of power, prestige, and durability.</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="social-footer text-center">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-whatsapp"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-tiktok"></i></a>
+  </div>
+
+  <div class="copyright-footer text-center">
+    <p>&copy; 2025 AY'SMART Investment Ltd. All Rights Reserved.</p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Animated Text -->
+  <script>
+    const textArrayAuto = [
+      "Driven by Excellence. Powered by Trust.",
+      "Smart Investments in Motion 🚗",
+      "Luxury Meets Reliability with AY'SMART."
+    ];
+    let indexAuto = 0;
+    const textElementAuto = document.getElementById("animatedTextAuto");
+
+    function changeTextAuto() {
+      textElementAuto.textContent = textArrayAuto[indexAuto];
+      indexAuto = (indexAuto + 1) % textArrayAuto.length;
+    }
+
+    changeTextAuto();
+    setInterval(changeTextAuto, 2500);
+  </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | AY'SMART Investment Ltd</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- BN Ribbon -->
+  <div id="bn-ribbon"><span>BN:355566</span></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="assets/img/logo.png" alt="AYSMART Logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler border-0 p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="assets/img/logo.png" alt="Toggle Logo" class="toggler-img">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="details_realestate.html">Real Estate</a></li>
+          <li class="nav-item"><a class="nav-link" href="details_auto.html">Automotive</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-banner d-flex align-items-center justify-content-center text-center text-light">
+    <div class="container position-relative">
+      <div class="hero-watermark">
+        <img src="assets/img/logo.png" alt="Watermark Logo">
+      </div>
+      <h1 class="fw-bold mb-3 text-gradient">Our Core Services</h1>
+      <h4 id="animatedTextServices" class="fw-semibold text-warning"></h4>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold text-light mb-5">Explore What We Offer</h2>
+      <div class="row g-4">
+        <!-- REAL ESTATE -->
+        <div class="col-md-6">
+          <div class="service-card real-estate p-4 rounded shadow-lg">
+            <div class="icon mb-3"><i class="bi bi-house-door-fill"></i></div>
+            <h3 class="text-warning fw-bold">Real Estate Management</h3>
+            <p class="text-light">
+              Explore luxurious homes, premium lands, and verified properties.  
+              AY'SMART provides transparent, affordable, and profitable real estate investment options.
+            </p>
+            <a href="details_realestate.html" class="btn btn-outline-warning mt-3">Learn More</a>
+          </div>
+        </div>
+
+        <!-- AUTOMOTIVE -->
+        <div class="col-md-6">
+          <div class="service-card automotive p-4 rounded shadow-lg">
+            <div class="icon mb-3"><i class="bi bi-car-front-fill"></i></div>
+            <h3 class="text-warning fw-bold">Automotive Sales & Consultancy</h3>
+            <p class="text-light">
+              Drive your dreams with AY'SMART Automotive.  
+              From luxury rides to reliable sedans, our car deals are built on trust and performance.
+            </p>
+            <a href="details_auto.html" class="btn btn-outline-warning mt-3">Explore More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL FOOTER -->
+  <div class="social-footer text-center">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-whatsapp"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-tiktok"></i></a>
+  </div>
+
+  <!-- COPYRIGHT FOOTER -->
+  <div class="copyright-footer text-center">
+    <p>&copy; 2025 AY'SMART Investment Ltd. All Rights Reserved.</p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Animated Text -->
+  <script>
+    const servicesTextArray = [
+      "Invest in Homes 🏠",
+      "Own Your Dream Car 🚗",
+      "Building Futures, Driving Dreams 💼"
+    ];
+    let servicesIndex = 0;
+    const servicesText = document.getElementById("animatedTextServices");
+
+    function changeServicesText() {
+      servicesText.textContent = servicesTextArray[servicesIndex];
+      servicesIndex = (servicesIndex + 1) % servicesTextArray.length;
+    }
+
+    changeServicesText();
+    setInterval(changeServicesText, 2500);
+  </script>
+</body>
+</html>

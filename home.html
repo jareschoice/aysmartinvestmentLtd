@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | AY'SMART Investment Ltd</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- BN Ribbon -->
+  <div id="bn-ribbon"><span>BN:355566</span></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="assets/img/logo.png" alt="AYSMART Logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler border-0 p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="assets/img/logo.png" alt="Toggle Logo" class="toggler-img">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="details_realestate.html">Real Estate</a></li>
+          <li class="nav-item"><a class="nav-link" href="details_auto.html">Automotive</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-banner d-flex align-items-center justify-content-center text-center text-light">
+    <div class="container position-relative">
+      <div class="hero-watermark">
+        <img src="assets/img/logo.png" alt="Watermark Logo">
+      </div>
+      <h1 class="fw-bold mb-3 text-gradient">Welcome to AY'SMART Investment Ltd</h1>
+      <h4 id="animatedHomeText" class="fw-semibold text-warning"></h4>
+      <a href="services.html" class="btn btn-warning btn-lg mt-4 shadow-lg">Explore Our Services</a>
+    </div>
+  </section>
+
+  <!-- FEATURED SERVICES -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="fw-bold text-light mb-5">Featured Categories</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="service-card real-estate p-4 rounded shadow-lg">
+            <i class="bi bi-building fs-1 text-warning"></i>
+            <h3 class="text-warning mt-3">Real Estate</h3>
+            <p class="text-light">
+              Invest in verified homes and properties that build your future.
+            </p>
+            <a href="details_realestate.html" class="btn btn-outline-warning">View Listings</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="service-card automotive p-4 rounded shadow-lg">
+            <i class="bi bi-car-front fs-1 text-warning"></i>
+            <h3 class="text-warning mt-3">Automotive</h3>
+            <p class="text-light">
+              Drive your dreams — from luxury vehicles to daily rides, we’ve got you covered.
+            </p>
+            <a href="details_auto.html" class="btn btn-outline-warning">View Cars</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials py-5">
+    <div class="container text-center">
+      <h2 class="text-warning mb-4">Client Testimonials</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card p-4 shadow-lg rounded">
+            <p class="text-light fst-italic">"I bought my first property through AY’SMART, and it was stress-free and transparent!"</p>
+            <div class="stars text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+            </div>
+            <h6 class="text-light">— Kemi A., Ilorin</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card p-4 shadow-lg rounded">
+            <p class="text-light fst-italic">"Their car sales are reliable and fairly priced — I love my new SUV!"</p>
+            <div class="stars text-warning mb-2">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <h6 class="text-light">— Yusuf B., Abuja</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL FOOTER -->
+  <div class="social-footer text-center">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-whatsapp"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-tiktok"></i></a>
+  </div>
+
+  <!-- COPYRIGHT FOOTER -->
+  <div class="copyright-footer text-center">
+    <p>&copy; 2025 AY'SMART Investment Ltd. All Rights Reserved.</p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Animated Hero Text -->
+  <script>
+    const homeTextArray = [
+      "Invest Smart. Live Smart.",
+      "Driving Dreams 🚗 | Building Legacies 🏠",
+      "Your future starts here with AY'SMART."
+    ];
+    let homeIndex = 0;
+    const homeText = document.getElementById("animatedHomeText");
+
+    function changeHomeText() {
+      homeText.textContent = homeTextArray[homeIndex];
+      homeIndex = (homeIndex + 1) % homeTextArray.length;
+    }
+    changeHomeText();
+    setInterval(changeHomeText, 2500);
+  </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | AY'SMART Investment Ltd</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- BN Ribbon -->
+  <div id="bn-ribbon"><span>BN:355566</span></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="assets/img/logo.png" alt="AYSMART Logo">
+      </a>
+      <button class="navbar-toggler border-0 p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="assets/img/logo.png" alt="Toggle Logo" class="toggler-img">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-banner text-center d-flex align-items-center justify-content-center">
+    <div class="hero-watermark">
+      <img src="assets/img/logo.png" alt="Watermark Logo">
+    </div>
+    <div class="container">
+      <h1 class="fw-bold text-gradient mb-3">Get in Touch</h1>
+      <h5 class="text-warning">We’re just one message away — let’s connect!</h5>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-5 text-center fade-up">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Contact Form -->
+        <div class="col-lg-6">
+          <div class="register-card p-4 rounded-3 shadow-lg">
+            <h3 class="text-warning fw-bold mb-3">Send Us a Message</h3>
+            <form action="send_message.php" method="POST">
+              <div class="mb-3">
+                <input type="text" class="form-control" name="name" placeholder="Your Full Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" name="email" placeholder="Your Email Address" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" name="message" rows="4" placeholder="Your Message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning w-100 fw-semibold shadow-sm">
+                <i class="bi bi-send"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-6 text-start text-light">
+          <div class="p-4 rounded-3 service-card h-100">
+            <h3 class="text-warning fw-bold mb-3"><i class="bi bi-geo-alt"></i> Our Office</h3>
+            <p>No. 20 Olusosun Street, Adeta, Ilorin, Kwara State, Nigeria</p>
+            
+            <h3 class="text-warning fw-bold mt-4"><i class="bi bi-envelope"></i> Email Us</h3>
+            <p>info@aysmartinvestment.com</p>
+
+            <h3 class="text-warning fw-bold mt-4"><i class="bi bi-telephone"></i> Call Us</h3>
+            <p>+234 901 234 5678</p>
+
+            <div class="social-links mt-4">
+              <h5 class="text-warning">Connect with us:</h5>
+              <a href="#"><i class="bi bi-facebook fs-4"></i></a>
+              <a href="#"><i class="bi bi-instagram fs-4"></i></a>
+              <a href="#"><i class="bi bi-twitter fs-4"></i></a>
+              <a href="#"><i class="bi bi-whatsapp fs-4"></i></a>
+              <a href="#"><i class="bi bi-tiktok fs-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h3 class="text-warning mb-4">Find Us on the Map</h3>
+      <div class="map-container rounded-3 shadow-lg overflow-hidden mx-auto" style="max-width: 900px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.632479847499!2d4.5628!3d8.5001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10364c5d9a9bde1b%3A0x2e3a304fa7e1e516!2sAdeta%2C%20Ilorin!5e0!3m2!1sen!2sng!4v1700999999999"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Footer -->
+  <div class="social-footer text-center">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-whatsapp"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-tiktok"></i></a>
+  </div>
+
+  <!-- Copyright Footer -->
+  <div class="copyright-footer text-center">
+    <p>&copy; 2025 AY'SMART Investment Ltd. All Rights Reserved.</p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

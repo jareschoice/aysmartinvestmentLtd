@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Details | AY'SMART Investment Ltd</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- BN Ribbon -->
+  <div id="bn-ribbon"><span>BN:355566</span></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="assets/img/logo.png" alt="AYSMART Logo" class="nav-logo">
+      </a>
+      <button class="navbar-toggler border-0 p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <img src="assets/img/logo.png" alt="Toggle Logo" class="toggler-img">
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="details_realestate.html">Real Estate</a></li>
+          <li class="nav-item"><a class="nav-link" href="details_auto.html">Automotive</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero-banner d-flex align-items-center justify-content-center text-center text-light">
+    <div class="container position-relative">
+      <div class="hero-watermark">
+        <img src="assets/img/logo.png" alt="Watermark Logo">
+      </div>
+      <h1 class="fw-bold mb-3 text-gradient">AY'SMART Real Estate Division</h1>
+      <h4 id="animatedTextReal" class="fw-semibold text-warning"></h4>
+    </div>
+  </section>
+
+  <!-- PROPERTIES LIST -->
+  <section class="property-list py-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Property 1 -->
+        <div class="col-md-4">
+          <div class="card property-card shadow-lg">
+            <img src="assets/img/estate1.jpg" class="card-img-top" alt="Property Image">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Luxury Duplex, Lekki</h5>
+              <p class="card-text text-light">4-bedroom fully detached duplex with modern finishing.</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="col-md-4">
+          <div class="card property-card shadow-lg">
+            <img src="assets/img/estate2.jpg" class="card-img-top" alt="Property Image">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Smart Apartment, Abuja</h5>
+              <p class="card-text text-light">Affordable 2-bedroom apartment in the city center.</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="col-md-4">
+          <div class="card property-card shadow-lg">
+            <img src="assets/img/estate3.jpg" class="card-img-top" alt="Property Image">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Gated Estate Plot, Ibadan</h5>
+              <p class="card-text text-light">Plots available with flexible payment plans.</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 4 -->
+        <div class="col-md-4">
+          <div class="card property-card shadow-lg">
+            <img src="assets/img/estate4.jpg" class="card-img-top" alt="Property Image">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Commercial Complex, Ilorin</h5>
+              <p class="card-text text-light">Spacious commercial property in a busy area.</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property 5 -->
+        <div class="col-md-4">
+          <div class="card property-card shadow-lg">
+            <img src="assets/img/estate5.jpg" class="card-img-top" alt="Property Image">
+            <div class="card-body">
+              <h5 class="card-title text-warning">Mini Estate, Kwara</h5>
+              <p class="card-text text-light">10-unit mini estate with top-tier finishing.</p>
+              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="social-footer text-center">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+    <a href="#"><i class="bi bi-whatsapp"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-tiktok"></i></a>
+  </div>
+
+  <div class="copyright-footer text-center">
+    <p>&copy; 2025 AY'SMART Investment Ltd. All Rights Reserved.</p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Animated Text -->
+  <script>
+    const textArrayReal = [
+      "Building Legacies in Real Estate 🏡",
+      "Smart Property Investments Nationwide.",
+      "Secure your Future with AY'SMART."
+    ];
+    let indexReal = 0;
+    const textElementReal = document.getElementById("animatedTextReal");
+
+    function changeTextReal() {
+      textElementReal.textContent = textArrayReal[indexReal];
+      indexReal = (indexReal + 1) % textArrayReal.length;
+    }
+
+    changeTextReal();
+    setInterval(changeTextReal, 2500);
+  </script>
+</body>
+</html>
