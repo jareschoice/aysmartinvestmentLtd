@@ -18,7 +18,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="home.html">
+      <a class="navbar-brand" href="index.html">
         <img src="assets/img/logo.png" alt="AYSMART Logo" class="nav-logo">
       </a>
       <button class="navbar-toggler border-0 p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -26,7 +26,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="details_realestate.html">Real Estate</a></li>
           <li class="nav-item"><a class="nav-link active" href="details_auto.html">Automotive</a></li>
@@ -51,55 +51,237 @@
   <!-- AUTOMOTIVE COLLECTION -->
   <section class="property-list py-5">
     <div class="container">
+      <h2 class="text-center text-warning fw-bold mb-5">Featured Vehicles</h2>
       <div class="row g-4">
-        <!-- Car 1 -->
-        <div class="col-md-3">
-          <div class="card property-card shadow-lg">
-            <img src="assets/img/car1.jpg" class="card-img-top" alt="Car Image">
-            <div class="card-body">
-              <h5 class="card-title text-warning">2023 Mercedes-Benz GLE 450</h5>
-              <p class="card-text text-light">Luxury SUV with premium comfort and performance.</p>
-              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+        
+        <!-- Vehicle 1: Mercedes-Benz GLE 450 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/car4.jpg" class="img-fluid w-100" alt="Mercedes-Benz GLE 450" style="height: 200px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3">Available</span>
+            </div>
+            <div class="card-body p-3">
+              <h6 class="card-title text-warning fw-bold mb-2">2023 Mercedes-Benz GLE 450</h6>
+              
+              <div class="vehicle-details mb-2">
+                <p class="mb-1 small"><i class="bi bi-geo-alt-fill text-warning me-1"></i><strong>Location:</strong> Lagos</p>
+                <p class="mb-1 small"><i class="bi bi-cash-stack text-warning me-1"></i><strong>Price:</strong> <span class="text-light fw-bold">₦45,000,000</span></p>
+                <p class="mb-1 small"><i class="bi bi-hand-thumbs-up text-warning me-1"></i><strong>Status:</strong> <span class="badge bg-warning text-dark">Negotiable</span></p>
+              </div>
+
+              <div class="vehicle-description mb-2">
+                <p class="text-light" style="font-size: 0.85rem;">Luxury SUV with premium comfort, advanced tech, and powerful performance.</p>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning btn-sm w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-1"></i>Inquire Now
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Car 2 -->
-        <div class="col-md-3">
-          <div class="card property-card shadow-lg">
-            <img src="assets/img/car2.jpg" class="card-img-top" alt="Car Image">
-            <div class="card-body">
-              <h5 class="card-title text-warning">2024 Lexus RX 350</h5>
-              <p class="card-text text-light">Elegant design, top-notch technology, and reliability.</p>
-              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+        <!-- Vehicle 2: Lexus RX 350 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/car5.jpg" class="img-fluid w-100" alt="Lexus RX 350" style="height: 200px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3">Available</span>
+            </div>
+            <div class="card-body p-3">
+              <h6 class="card-title text-warning fw-bold mb-2">2024 Lexus RX 350</h6>
+              
+              <div class="vehicle-details mb-2">
+                <p class="mb-1 small"><i class="bi bi-geo-alt-fill text-warning me-1"></i><strong>Location:</strong> Abuja</p>
+                <p class="mb-1 small"><i class="bi bi-cash-stack text-warning me-1"></i><strong>Price:</strong> <span class="text-light fw-bold">₦38,500,000</span></p>
+                <p class="mb-1 small"><i class="bi bi-hand-thumbs-up text-warning me-1"></i><strong>Status:</strong> <span class="badge bg-danger">Non-Negotiable</span></p>
+              </div>
+
+              <div class="vehicle-description mb-2">
+                <p class="text-light" style="font-size: 0.85rem;">Elegant design with top-notch technology and renowned Lexus reliability.</p>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning btn-sm w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-1"></i>Inquire Now
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Car 3 -->
-        <div class="col-md-3">
-          <div class="card property-card shadow-lg">
-            <img src="assets/img/car3.jpg" class="card-img-top" alt="Car Image">
-            <div class="card-body">
-              <h5 class="card-title text-warning">2022 Range Rover Sport</h5>
-              <p class="card-text text-light">Dynamic luxury SUV with unmatched capability.</p>
-              <a href="details_auto.html" class="btn btn-outline-warning btn-sm">View Details</a>
+        <!-- Vehicle 3: Range Rover Sport -->
+        <div class="col-lg-3 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/car6.jpg" class="img-fluid w-100" alt="Range Rover Sport" style="height: 200px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3">Available</span>
+            </div>
+            <div class="card-body p-3">
+              <h6 class="card-title text-warning fw-bold mb-2">2022 Range Rover Sport</h6>
+              
+              <div class="vehicle-details mb-2">
+                <p class="mb-1 small"><i class="bi bi-geo-alt-fill text-warning me-1"></i><strong>Location:</strong> Port Harcourt</p>
+                <p class="mb-1 small"><i class="bi bi-cash-stack text-warning me-1"></i><strong>Price:</strong> <span class="text-light fw-bold">₦52,000,000</span></p>
+                <p class="mb-1 small"><i class="bi bi-hand-thumbs-up text-warning me-1"></i><strong>Status:</strong> <span class="badge bg-warning text-dark">Negotiable</span></p>
+              </div>
+
+              <div class="vehicle-description mb-2">
+                <p class="text-light" style="font-size: 0.85rem;">Dynamic luxury SUV with unmatched off-road capability and refinement.</p>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning btn-sm w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-1"></i>Inquire Now
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Car 4 -->
-        <div class="col-md-3">
-          <div class="card property-card shadow-lg">
-            <img src="assets/img/car4.jpg" class="card-img-top" alt="Car Image">
-            <div class="card-body">
-              <h5 class="card-title text-warning">2023 Toyota Land Cruiser</h5>
-              <p class="card-text text-light">The perfect balance of power, prestige, and durability.</p>
-              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+        <!-- Vehicle 4: Toyota Land Cruiser -->
+        <div class="col-lg-3 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/car7.jpg" class="img-fluid w-100" alt="Toyota Land Cruiser" style="height: 200px; object-fit: cover;">
+              <span class="badge bg-info position-absolute top-0 end-0 m-3">Hot Deal</span>
+            </div>
+            <div class="card-body p-3">
+              <h6 class="card-title text-warning fw-bold mb-2">2023 Toyota Land Cruiser</h6>
+              
+              <div class="vehicle-details mb-2">
+                <p class="mb-1 small"><i class="bi bi-geo-alt-fill text-warning me-1"></i><strong>Location:</strong> Lagos</p>
+                <p class="mb-1 small"><i class="bi bi-cash-stack text-warning me-1"></i><strong>Price:</strong> <span class="text-light fw-bold">₦68,000,000</span></p>
+                <p class="mb-1 small"><i class="bi bi-hand-thumbs-up text-warning me-1"></i><strong>Status:</strong> <span class="badge bg-danger">Non-Negotiable</span></p>
+              </div>
+
+              <div class="vehicle-description mb-2">
+                <p class="text-light" style="font-size: 0.85rem;">The perfect balance of power, prestige, and legendary durability.</p>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning btn-sm w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-1"></i>Inquire Now
+              </a>
             </div>
           </div>
         </div>
+
+        <!-- Vehicle 5: BMW X5 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/car8.jpg" class="img-fluid w-100" alt="BMW X5" style="height: 200px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3">Available</span>
+            </div>
+            <div class="card-body p-3">
+              <h6 class="card-title text-warning fw-bold mb-2">2023 BMW X5 M Sport</h6>
+              
+              <div class="vehicle-details mb-2">
+                <p class="mb-1 small"><i class="bi bi-geo-alt-fill text-warning me-1"></i><strong>Location:</strong> Abuja</p>
+                <p class="mb-1 small"><i class="bi bi-cash-stack text-warning me-1"></i><strong>Price:</strong> <span class="text-light fw-bold">₦42,000,000</span></p>
+                <p class="mb-1 small"><i class="bi bi-hand-thumbs-up text-warning me-1"></i><strong>Status:</strong> <span class="badge bg-warning text-dark">Negotiable</span></p>
+              </div>
+
+              <div class="vehicle-description mb-2">
+                <p class="text-light" style="font-size: 0.85rem;">Sports luxury SUV combining performance with premium comfort and style.</p>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning btn-sm w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-1"></i>Inquire Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle 6: Toyota Camry -->
+        <div class="col-lg-3 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/car1.jpg" class="img-fluid w-100" alt="Toyota Camry" style="height: 200px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3">Available</span>
+            </div>
+            <div class="card-body p-3">
+              <h6 class="card-title text-warning fw-bold mb-2">2022 Toyota Camry SE</h6>
+              
+              <div class="vehicle-details mb-2">
+                <p class="mb-1 small"><i class="bi bi-geo-alt-fill text-warning me-1"></i><strong>Location:</strong> Ibadan</p>
+                <p class="mb-1 small"><i class="bi bi-cash-stack text-warning me-1"></i><strong>Price:</strong> <span class="text-light fw-bold">₦18,500,000</span></p>
+                <p class="mb-1 small"><i class="bi bi-hand-thumbs-up text-warning me-1"></i><strong>Status:</strong> <span class="badge bg-warning text-dark">Negotiable</span></p>
+              </div>
+
+              <div class="vehicle-description mb-2">
+                <p class="text-light" style="font-size: 0.85rem;">Reliable sedan with excellent fuel efficiency and affordable luxury.</p>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning btn-sm w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-1"></i>Inquire Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle 7: Tesla Model 3 -->
+        <div class="col-lg-3 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/car2.jpg" class="img-fluid w-100" alt="Tesla Model 3" style="height: 200px; object-fit: cover;">
+              <span class="badge bg-warning position-absolute top-0 end-0 m-3 text-dark">New Arrival</span>
+            </div>
+            <div class="card-body p-3">
+              <h6 class="card-title text-warning fw-bold mb-2">2024 Tesla Model 3</h6>
+              
+              <div class="vehicle-details mb-2">
+                <p class="mb-1 small"><i class="bi bi-geo-alt-fill text-warning me-1"></i><strong>Location:</strong> Lagos</p>
+                <p class="mb-1 small"><i class="bi bi-cash-stack text-warning me-1"></i><strong>Price:</strong> <span class="text-light fw-bold">₦35,000,000</span></p>
+                <p class="mb-1 small"><i class="bi bi-hand-thumbs-up text-warning me-1"></i><strong>Status:</strong> <span class="badge bg-danger">Non-Negotiable</span></p>
+              </div>
+
+              <div class="vehicle-description mb-2">
+                <p class="text-light" style="font-size: 0.85rem;">Electric excellence with autopilot features and cutting-edge technology.</p>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning btn-sm w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-1"></i>Inquire Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicle 8: Honda Accord -->
+        <div class="col-lg-3 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/car3.jpg" class="img-fluid w-100" alt="Honda Accord" style="height: 200px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3">Available</span>
+            </div>
+            <div class="card-body p-3">
+              <h6 class="card-title text-warning fw-bold mb-2">2023 Honda Accord Touring</h6>
+              
+              <div class="vehicle-details mb-2">
+                <p class="mb-1 small"><i class="bi bi-geo-alt-fill text-warning me-1"></i><strong>Location:</strong> Ilorin</p>
+                <p class="mb-1 small"><i class="bi bi-cash-stack text-warning me-1"></i><strong>Price:</strong> <span class="text-light fw-bold">₦22,000,000</span></p>
+                <p class="mb-1 small"><i class="bi bi-hand-thumbs-up text-warning me-1"></i><strong>Status:</strong> <span class="badge bg-warning text-dark">Negotiable</span></p>
+              </div>
+
+              <div class="vehicle-description mb-2">
+                <p class="text-light" style="font-size: 0.85rem;">Spacious and sophisticated sedan with advanced safety features.</p>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning btn-sm w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-1"></i>Inquire Now
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section text-center py-5">
+    <div class="container">
+      <h3 class="fw-bold text-light mb-3">Ready to Drive Your Dream Car?</h3>
+      <p class="text-warning mb-4">Experience luxury, performance, and reliability with AY'SMART Automotive.</p>
+      <a href="register.html" class="btn btn-warning btn-lg text-dark fw-bold px-5">
+        <i class="bi bi-person-plus-fill me-2"></i>Register Now
+      </a>
     </div>
   </section>
 

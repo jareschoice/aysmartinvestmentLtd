@@ -18,7 +18,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="home.html">
+      <a class="navbar-brand" href="index.html">
         <img src="assets/img/logo.png" alt="AYSMART Logo" class="nav-logo">
       </a>
       <button class="navbar-toggler border-0 p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -26,9 +26,9 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="details_realestate.html">Real Estate</a></li>
+          <li class="nav-item"><a class="nav-link active" href="details_realestate.html">Real Estate</a></li>
           <li class="nav-item"><a class="nav-link" href="details_auto.html">Automotive</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -51,67 +51,211 @@
   <!-- PROPERTIES LIST -->
   <section class="property-list py-5">
     <div class="container">
+      <h2 class="text-center text-warning fw-bold mb-5">Featured Properties</h2>
       <div class="row g-4">
-        <!-- Property 1 -->
-        <div class="col-md-4">
-          <div class="card property-card shadow-lg">
-            <img src="assets/img/estate1.jpg" class="card-img-top" alt="Property Image">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Luxury Duplex, Lekki</h5>
-              <p class="card-text text-light">4-bedroom fully detached duplex with modern finishing.</p>
-              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+        
+        <!-- Property 1: Luxury Duplex -->
+        <div class="col-lg-4 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/realestate4.jpg" class="img-fluid w-100" alt="Luxury Duplex" style="height: 250px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3">Available</span>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-warning fw-bold mb-3">Luxury 4-Bedroom Duplex</h5>
+              
+              <div class="property-details mb-3">
+                <p class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i><strong>Location:</strong> Lekki Phase 1, Lagos</p>
+                <p class="mb-2"><i class="bi bi-cash-stack text-warning me-2"></i><strong>Price:</strong> <span class="text-light fs-5">₦85,000,000</span></p>
+                <p class="mb-2"><i class="bi bi-hand-thumbs-up text-warning me-2"></i><strong>Status:</strong> <span class="badge bg-warning text-dark">Negotiable</span></p>
+              </div>
+
+              <div class="property-description mb-3">
+                <p class="text-light small">Modern 4-bedroom detached duplex with smart security, solar power, fitted kitchen, and ample parking space.</p>
+              </div>
+
+              <div class="document-types mb-3">
+                <p class="text-warning fw-semibold mb-2"><i class="bi bi-file-earmark-text me-2"></i>Document Types:</p>
+                <ul class="list-unstyled small text-light ps-3">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificate of Occupancy (C of O)</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Survey Plan</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Deed of Assignment</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Building Approval</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Governor's Consent</li>
+                </ul>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-2"></i>Contact Us
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Property 2 -->
-        <div class="col-md-4">
-          <div class="card property-card shadow-lg">
-            <img src="assets/img/estate2.jpg" class="card-img-top" alt="Property Image">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Smart Apartment, Abuja</h5>
-              <p class="card-text text-light">Affordable 2-bedroom apartment in the city center.</p>
-              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+        <!-- Property 2: Serviced Apartments -->
+        <div class="col-lg-4 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/realestate5.jpg" class="img-fluid w-100" alt="Serviced Apartments" style="height: 250px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3">Available</span>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-warning fw-bold mb-3">3-Bedroom Serviced Apartment</h5>
+              
+              <div class="property-details mb-3">
+                <p class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i><strong>Location:</strong> Ikoyi, Lagos</p>
+                <p class="mb-2"><i class="bi bi-cash-stack text-warning me-2"></i><strong>Price:</strong> <span class="text-light fs-5">₦65,000,000</span></p>
+                <p class="mb-2"><i class="bi bi-hand-thumbs-up text-warning me-2"></i><strong>Status:</strong> <span class="badge bg-danger">Non-Negotiable</span></p>
+              </div>
+
+              <div class="property-description mb-3">
+                <p class="text-light small">Premium 3-bedroom apartment with 24/7 security, gym, swimming pool, and dedicated parking within a gated estate.</p>
+              </div>
+
+              <div class="document-types mb-3">
+                <p class="text-warning fw-semibold mb-2"><i class="bi bi-file-earmark-text me-2"></i>Document Types:</p>
+                <ul class="list-unstyled small text-light ps-3">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificate of Occupancy (C of O)</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Survey Plan</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Deed of Assignment</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Building Plan Approval</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Estate Agreement</li>
+                </ul>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-2"></i>Contact Us
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Property 3 -->
-        <div class="col-md-4">
-          <div class="card property-card shadow-lg">
-            <img src="assets/img/estate3.jpg" class="card-img-top" alt="Property Image">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Gated Estate Plot, Ibadan</h5>
-              <p class="card-text text-light">Plots available with flexible payment plans.</p>
-              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+        <!-- Property 3: Land Plots -->
+        <div class="col-lg-4 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/land1.jpg" class="img-fluid w-100" alt="Land Plots" style="height: 250px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3">Available</span>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-warning fw-bold mb-3">600sqm Residential Land</h5>
+              
+              <div class="property-details mb-3">
+                <p class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i><strong>Location:</strong> Ilorin, Kwara State</p>
+                <p class="mb-2"><i class="bi bi-cash-stack text-warning me-2"></i><strong>Price:</strong> <span class="text-light fs-5">₦12,000,000</span></p>
+                <p class="mb-2"><i class="bi bi-hand-thumbs-up text-warning me-2"></i><strong>Status:</strong> <span class="badge bg-warning text-dark">Negotiable</span></p>
+              </div>
+
+              <div class="property-description mb-3">
+                <p class="text-light small">Verified 600 square meter land plot in a developing area with good road access. Perfect for residential development.</p>
+              </div>
+
+              <div class="document-types mb-3">
+                <p class="text-warning fw-semibold mb-2"><i class="bi bi-file-earmark-text me-2"></i>Document Types:</p>
+                <ul class="list-unstyled small text-light ps-3">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificate of Occupancy (C of O)</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Survey Plan</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Deed of Assignment</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Registered Deed</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Tax Clearance</li>
+                </ul>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-2"></i>Contact Us
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Property 4 -->
-        <div class="col-md-4">
-          <div class="card property-card shadow-lg">
-            <img src="assets/img/estate4.jpg" class="card-img-top" alt="Property Image">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Commercial Complex, Ilorin</h5>
-              <p class="card-text text-light">Spacious commercial property in a busy area.</p>
-              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+        <!-- Property 4: Mini Estate -->
+        <div class="col-lg-4 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/estate2.jpg" class="img-fluid w-100" alt="Mini Estate" style="height: 250px; object-fit: cover;">
+              <span class="badge bg-success position-absolute top-0 end-0 m-3">Available</span>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-warning fw-bold mb-3">Gated Mini Estate (5 Units)</h5>
+              
+              <div class="property-details mb-3">
+                <p class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i><strong>Location:</strong> Ibadan, Oyo State</p>
+                <p class="mb-2"><i class="bi bi-cash-stack text-warning me-2"></i><strong>Price:</strong> <span class="text-light fs-5">₦45,000,000</span></p>
+                <p class="mb-2"><i class="bi bi-hand-thumbs-up text-warning me-2"></i><strong>Status:</strong> <span class="badge bg-warning text-dark">Negotiable</span></p>
+              </div>
+
+              <div class="property-description mb-3">
+                <p class="text-light small">Exclusive 3-bedroom terrace houses in a gated estate with 24/7 security, interlocked roads, and smart amenities.</p>
+              </div>
+
+              <div class="document-types mb-3">
+                <p class="text-warning fw-semibold mb-2"><i class="bi bi-file-earmark-text me-2"></i>Document Types:</p>
+                <ul class="list-unstyled small text-light ps-3">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificate of Occupancy (C of O)</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Survey Plan</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Deed of Assignment</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Building Approval</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Governor's Consent</li>
+                </ul>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-2"></i>Contact Us
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Property 5 -->
-        <div class="col-md-4">
-          <div class="card property-card shadow-lg">
-            <img src="assets/img/estate5.jpg" class="card-img-top" alt="Property Image">
-            <div class="card-body">
-              <h5 class="card-title text-warning">Mini Estate, Kwara</h5>
-              <p class="card-text text-light">10-unit mini estate with top-tier finishing.</p>
-              <a href="#" class="btn btn-outline-warning btn-sm">View Details</a>
+        <!-- Property 5: Commercial Space -->
+        <div class="col-lg-4 col-md-6">
+          <div class="property-card shadow-lg rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="assets/img/realestate6.jpg" class="img-fluid w-100" alt="Commercial Space" style="height: 250px; object-fit: cover;">
+              <span class="badge bg-info position-absolute top-0 end-0 m-3">Commercial</span>
+            </div>
+            <div class="card-body p-4">
+              <h5 class="card-title text-warning fw-bold mb-3">Commercial Office Complex</h5>
+              
+              <div class="property-details mb-3">
+                <p class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i><strong>Location:</strong> Victoria Island, Lagos</p>
+                <p class="mb-2"><i class="bi bi-cash-stack text-warning me-2"></i><strong>Price:</strong> <span class="text-light fs-5">₦250,000,000</span></p>
+                <p class="mb-2"><i class="bi bi-hand-thumbs-up text-warning me-2"></i><strong>Status:</strong> <span class="badge bg-danger">Non-Negotiable</span></p>
+              </div>
+
+              <div class="property-description mb-3">
+                <p class="text-light small">Prime commercial office space in strategic city center with high foot traffic. Perfect for corporate headquarters or retail business.</p>
+              </div>
+
+              <div class="document-types mb-3">
+                <p class="text-warning fw-semibold mb-2"><i class="bi bi-file-earmark-text me-2"></i>Document Types:</p>
+                <ul class="list-unstyled small text-light ps-3">
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificate of Occupancy (C of O)</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Survey Plan</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Commercial License</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Building Plan Approval</li>
+                  <li><i class="bi bi-check-circle-fill text-success me-2"></i>Governor's Consent</li>
+                </ul>
+              </div>
+
+              <a href="contact.html" class="btn btn-warning w-100 fw-semibold">
+                <i class="bi bi-telephone-fill me-2"></i>Contact Us
+              </a>
             </div>
           </div>
         </div>
+
       </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section text-center py-5">
+    <div class="container">
+      <h3 class="fw-bold text-light mb-3">Ready to Invest in Your Dream Property?</h3>
+      <p class="text-warning mb-4">Join thousands securing their future with AY'SMART Real Estate.</p>
+      <a href="register.html" class="btn btn-warning btn-lg text-dark fw-bold px-5">
+        <i class="bi bi-person-plus-fill me-2"></i>Register Now
+      </a>
     </div>
   </section>
 
